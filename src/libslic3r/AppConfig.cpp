@@ -349,7 +349,7 @@ void AppConfig::set_defaults()
         set_bool("enable_multi_machine", false);
 
     if (get("show_bambu_connect_export").empty())
-        set_bool("show_bambu_connect_export", false);
+        set_bool("show_bambu_connect_export", true);
 
     if (get("drc_bits").empty())
         set("drc_bits", DRC_BITS_DEFAULT_STR);
