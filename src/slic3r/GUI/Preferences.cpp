@@ -1775,6 +1775,11 @@ void PreferencesDialog::create_items()
     g_sizer->Add(item_auto_close_sketch_loops);
 #endif
 
+    auto item_bambu_connect_export = create_item_checkbox(_L("Show Bambu Connect export"),
+        _L("If enabled, adds an option to export the sliced plate and open it in Bambu Connect."),
+        "show_bambu_connect_export");
+    g_sizer->Add(item_bambu_connect_export);
+
 #if 0
     g_sizer->Add(create_item_title(_L("Filament Grouping")), 1, wxEXPAND);
     //temporarily disable it
